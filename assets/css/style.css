@@ -303,7 +303,7 @@ section {
 /* Featured Bikes Grid */
 .bikes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2.5rem;
 }
 
@@ -1316,6 +1316,7 @@ footer {
         gap: 1.5rem;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 2rem;
     }
 
     .stat-item h3 {
@@ -1324,10 +1325,29 @@ footer {
 
     /* Sections */
     section {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1.2rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bikes-grid, 
+    .testimonials-grid, 
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .section-header h2 {
         font-size: 2rem;
+    }
+
+    /* Header Alignment */
+    .nav-container {
+        padding: 0 1.2rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
     }
 }

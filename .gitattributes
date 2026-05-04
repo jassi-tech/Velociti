@@ -1,0 +1,6 @@
+# Tell GitHub Linguist to treat all PHP files as PHP, not Hack
+*.php linguist-language=PHP
+
+# Mark vendor/library files as vendored (excluded from stats)
+*.min.js linguist-vendored
+*.min.css linguist-vendored
